@@ -120,7 +120,7 @@ nav ul li a {
 main .titulo {
     margin-top: 1rem;
     color: var(--color-cinco);
-    background-image: url(/imgs/escuela.jpg);
+    background-image: url(./imgs/escuela.jpg);
     background-size: cover;
     background-position: center;
     height: 200px;
