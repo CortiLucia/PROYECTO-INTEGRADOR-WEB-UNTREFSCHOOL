@@ -1,0 +1,336 @@
+html {
+    --color-uno: #FC7300;
+    --color-dos: #1F8A70;
+    --color-tres: #00425A;
+    --color-cuatro: #181823;
+    --color-cinco: #EFF5F5;
+    padding: 1rem;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+header h2 {
+    margin: 0;
+}
+
+header div.container {
+    display: flex;
+    place-content: space-between;
+}
+
+#menu-check:not(:checked)~nav {
+    display: none;
+}
+
+#menu-check:checked~nav {
+    display: block;
+}
+
+#menu:hover {
+    color: var(--color-tres);
+    background-color: transparent;
+}
+
+#menu-cerrar {
+    display: none;
+}
+
+#menu-check:checked~label #menu-abrir {
+    display: none;
+}
+
+#menu-check:checked~label #menu-cerrar {
+    display: block;
+}
+
+header div.container nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    background-color: var(--color-cuatro);
+    padding-top: 0.5em;
+    padding-right: 1.5em;
+    opacity: 0.8;
+    color: var(--color-tres);
+    font-size: 1.4em;
+}
+
+header div.container nav ul a {
+    color: var(--color-cinco);
+    background-color: none;
+}
+
+header div.container nav ul,
+header div.container nav ul li {
+    display: block;
+    text-align: right;
+}
+
+#menu {
+    display: block;
+    color: var(--color-tres);
+    background-color: transparent;
+    font-size: 1.2em;
+    font-weight: bold;
+    border: 3px solid var(--color-cuatro);
+    border-radius: 0.2em;
+    position: absolute;
+    right: 0.5em;
+    top: 0.5em;
+    z-index: 9999;
+}
+
+header .container input label span {
+    padding: 1rem;
+}
+
+header h2 {
+    padding: 10px 0 0 10px;
+    color: var(--color-dos);
+}
+
+.container h2 span {
+    color: var(--color-uno);
+}
+
+header .container {
+    place-content: flex-start;
+}
+
+header .container nav {
+    width: 70%;
+    display: flex;
+    place-content: space-between;
+    z-index: 1;
+}
+
+/* #menu, */
+#menu-check {
+    display: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--color-cuatro);
+}
+
+main .titulo {
+    margin-top: 1rem;
+    color: var(--color-cinco);
+    background-image: url(/imgs/escuela.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    width: 100%;
+    display: grid;
+    place-content: center;
+}
+
+main .titulo h1 {
+    font-size: 2rem;
+    color: var(--color-dos);
+    text-align: center;
+}
+
+main .titulo h1 span {
+    color: var(--color-uno);
+}
+
+#informacion {
+    max-width: 700px;
+    margin: auto;
+    padding: 0 15px;
+    text-align: center;
+
+}
+
+section.informacion {
+    padding-top: 2em;
+    padding-bottom: 3em;
+}
+
+#informacion ul {
+    text-align: left;
+}
+
+.transition,
+p,
+ul li i:before,
+ul li i:after {
+    transition: all 0.3s;
+}
+
+#informacion .no-select,
+#informacion h2 {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    user-select: none;
+}
+
+#informacion h2 {
+    color: var(--color-dos);
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    line-height: 34px;
+    text-align: left;
+    padding: 15px 15px 0;
+    text-transform: none;
+    font-weight: 300;
+    letter-spacing: 1px;
+    display: block;
+    margin: 0;
+    cursor: pointer;
+    transition: .2s;
+}
+
+#informacion p {
+    color: var(--color-cuatro);
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    line-height: 1.45;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    transform: translate(0, 0);
+    margin-top: 5px;
+    margin-bottom: 15px;
+    padding: 0 50px 0 15px;
+    transition: .3s opacity, .6s max-height;
+    hyphens: auto;
+    
+}
+
+#informacion ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+#informacion ul li {
+    
+    position: relative;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    /*padding-bottom: 4px;*/
+    /*padding-top: 18px;*/
+    background: #fff;
+    box-shadow: 0 3px 10px -2px rgba(0, 0, 0, 0.1);
+    -webkit-tap-highlight-color: transparent;
+}
+
+#informacion ul li+li {
+    margin-top: 15px;
+}
+
+#informacion ul li:last-of-type {
+    padding-bottom: 0;
+}
+
+#informacion ul li i {
+    position: absolute;
+    transform: translate(-6px, 0);
+    margin-top: 28px;
+    right: 15px;
+}
+
+#informacion ul li i:before,
+ul li i:after {
+    content: "";
+    position: absolute;
+    background-color: var(--color-dos);
+    width: 3px;
+    height: 9px;
+}
+
+#informacion ul li i:before {
+    transform: translate(-2px, 0) rotate(45deg);
+}
+
+#informacion ul li i:after {
+    transform: translate(2px, 0) rotate(-45deg);
+}
+
+#informacion ul li input[type=checkbox] {
+    position: absolute;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    touch-action: manipulation;
+}
+
+#informacion ul li input[type=checkbox]:checked~h2 {
+    color: #000;
+}
+
+#informacion ul li input[type=checkbox]:checked~p {
+    /*margin-top: 0;*/
+    max-height: 0;
+    transition: .3s;
+    opacity: 0;
+    /*transform: translate(0, 50%);*/
+}
+
+#informacion ul li input[type=checkbox]:checked~i:before {
+    transform: translate(2px, 0) rotate(45deg);
+}
+
+#informacion ul li input[type=checkbox]:checked~i:after {
+    transform: translate(-2px, 0) rotate(-45deg);
+}
+
+footer {
+    background-color: var(--color-tres);
+}
+
+footer .titulo {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    color: var(--color-cinco);
+    display: flex;
+    justify-content: center;
+}
+
+footer .redes i {
+    font-size: 20px;
+    color: var(--color-cinco);
+
+}
+
+footer .redes {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+.ubicacion {
+    overflow: hidden;
+    padding-bottom: 55%;
+    position: relative;
+    height: 0;
+}
+
+.ubicacion iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+
+
+
+
+
+
+
+
+
+@media screen {}
