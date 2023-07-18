@@ -4,7 +4,6 @@ html {
     --color-tres: #00425A;
     --color-cuatro: #181823;
     --color-cinco: #EFF5F5;
-    padding: 1rem;
 }
 
 body {
@@ -49,10 +48,10 @@ header div.container nav {
     position: absolute;
     top: 0;
     right: 0;
-    height: 100%;
-    background-color: var(--color-cuatro);
-    padding-top: 0.5em;
-    padding-right: 1.5em;
+    height: 50%;
+    background-color: var(--color-tres);
+    padding-top: 0.8em;
+    padding-right: 1.8em;
     opacity: 0.8;
     color: var(--color-tres);
     font-size: 1.4em;
@@ -92,7 +91,7 @@ header h2 {
     color: var(--color-dos);
 }
 
-.container h2 span {
+header h2 span {
     color: var(--color-uno);
 }
 
@@ -288,16 +287,54 @@ ul li i:after {
     transform: translate(-2px, 0) rotate(-45deg);
 }
 
+.formulario {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.formulario label {
+    margin-bottom: 10px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.contacto-input {
+    margin-bottom: 15px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+}
+
+.formulario textarea {
+    resize: vertical;
+}
+
+.enviar {
+    background-color: var(--color-dos);
+    width: 6rem;
+    height: 40px;
+    font-size: 1rem;
+    border-radius: 15px;
+    border: none;
+    color: var(--color-cinco);
+}
+
+
 footer {
     background-color: var(--color-tres);
 }
 
 footer .titulo {
     font-family: 'Poppins', sans-serif;
-    font-size: 20px;
+    font-size: 25px;
     color: var(--color-cinco);
     display: flex;
     justify-content: center;
+    padding-top: 0.5rem;
 }
 
 footer .redes i {
@@ -309,19 +346,18 @@ footer .redes i {
 footer .redes {
     display: flex;
     justify-content: center;
-    gap: 8px;
+    gap: 15px;
+    padding: 1rem;
+    padding-top: 0;
 }
 
 .ubicacion {
     overflow: hidden;
     padding-bottom: 55%;
     position: relative;
-    height: 0;
 }
 
 .ubicacion iframe {
-    left: 0;
-    top: 0;
     height: 100%;
     width: 100%;
     position: absolute;
@@ -331,6 +367,7 @@ footer .redes {
     justify-content: center;
     color: var(--color-cinco);
     grid-column: 1 / -1;
+    margin: 0;
 }
 
 .contacto {
@@ -339,13 +376,11 @@ footer .redes {
     gap: 5px;
     padding: 1rem;
     padding-top: 0;
-
 }
 
 .contacto i {
     color: var(--color-cinco);
     font-size: 1.2rem;
-
 }
 
 .contacto a {
@@ -355,11 +390,9 @@ footer .redes {
 
 
 
-
-
-
-
-
-
-
-@media screen {}
+@media (min-width:768px) {
+    body {
+        background-color: #FC7300;
+    }
+}
+ 

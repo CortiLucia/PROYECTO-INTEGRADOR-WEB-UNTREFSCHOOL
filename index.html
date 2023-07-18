@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="descrption" content="">
+    <meta name="author" content="Lucía Corti">
     <title>UntrefSchool</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" />
     <script src="https://kit.fontawesome.com/98194b4800.js" crossorigin="anonymous"></script>
@@ -46,7 +48,7 @@
                     <li>
                         <input type="checkbox" checked>
                         <i></i>
-                        <h2>Quienes Somos</h2>
+                        <h2 id="quienessomos">Quienes Somos</h2>
                         <p>En nuestra institución, nos enorgullece contarles quiénes somos. Somos un equipo de
                             profesionales
                             comprometidos con la educación y el crecimiento de cada uno de nuestros estudiantes. Nuestra
@@ -68,7 +70,7 @@
                     <li>
                         <input type="checkbox" checked>
                         <i></i>
-                        <h2>Por qué elegirnos?</h2>
+                        <h2 id="elegirnos">Por qué elegirnos?</h2>
                         <p>Contamos con un equipo docente altamente capacitado y apasionado, dedicado a guiar a nuestros
                             estudiantes en su camino hacia el éxito. Además, disponemos de instalaciones modernas y
                             recursos
@@ -88,7 +90,7 @@
                     <li>
                         <input type="checkbox" checked>
                         <i></i>
-                        <h2>Propuesta educativa</h2>
+                        <h2 id="propuesta">Propuesta educativa</h2>
                         <p>La propuesta educativa de esta institución se basa en proporcionar una educación integral y
                             de
                             calidad, centrada en el desarrollo académico, emocional y social de los estudiantes. Nuestro
@@ -118,7 +120,7 @@
                     <li>
                         <input type="checkbox" checked>
                         <i></i>
-                        <h2>Ultimas noticias</h2>
+                        <h2 id="noticias">Ultimas noticias</h2>
 
                         <p>Estudiantes de nuestra institución se destacan en olimpiadas de matemáticas a nivel nacional
                             ¡Nos enorgullece compartir que tres de nuestros estudiantes participaron en las olimpiadas
@@ -151,31 +153,51 @@
                 </ul>
             </div>
         </section>
+        <section>
+            <div class="formulario">
+                <form action="index.html" autocomplete="on">
+                    <label for="nombre">Nombre (requerido)</label>
+                    <input type="text" class="contacto-input" name="nombre" id="nombre" required />
+
+                    <label for="correo_electronico">Correo Electronico (requerido)</label>
+                    <input type="text" class="contacto-input" name="correo_electronico" id="correo_electronico"
+                        required />
+
+                    <label for="comentario"> Telefono</label>
+                    <input type="text" class="contacto-input" name="telefono" id="telefono" />
+
+                    <label for="comentario"> Mensaje</label>
+                    <textarea type="text" class="contacto-input" name="mensaje" id="mensaje"></textarea>
+
+                    <button class="enviar" type="submit">Enviar</button>
+                </form>
+            </div>
+        </section>
     </main>
     <footer>
-        <div class="container-text">
-            <h2 class="titulo">Redes Sociales</h2>
-            <div class="redes">
-                <a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a>
-                <a href="https://www.Instagram.com"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
-                <a href="https://www.youtube.com"><i class="fa-brands fa-youtube"></i></a>
-            </div>
-            <div class="ubicacion">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.31403873594!2d-58.43283588880251!3d-34.5962196569892!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca7735e65453%3A0x4af86139896ec3f!2sInstituto%20Griego%20Atenagoras!5e0!3m2!1ses!2sar!4v1689559381570!5m2!1ses!2sar"
-                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-            <div class="contacto">
-                <h2 class="titulo">Contacto</h2>
-                <i class="fa-regular fa-envelope"></i>
-                <a href="mailto:untref@instituto.com.ar"> untref@instituto.com.ar</a> 
-                <i class="fa-solid fa-phone"></i>
-                <a href="tel: +549112223333"> 11.222.3333</a> 
-                <i class="fa-brands fa-whatsapp"></i>
-                <a href="tel: +549112223344"> 11.222.3344</a>
-            </div>
+        <h2 class="titulo">Redes Sociales</h2>
+        <div class="redes">
+            <a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.Instagram.com"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.youtube.com"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+        <div class="ubicacion">
+            <iframe id="instituto"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.31403873594!2d-58.43283588880251!3d-34.5962196569892!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca7735e65453%3A0x4af86139896ec3f!2sInstituto%20Griego%20Atenagoras!5e0!3m2!1ses!2sar!4v1689559381570!5m2!1ses!2sar"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="contacto">
+            <h2 class="titulo" id="contacto">Contacto</h2>
+            <i class="fa-regular fa-envelope"></i>
+            <a href="mailto:untref@instituto.com.ar"> untref@instituto.com.ar</a>
+            <i class="fa-solid fa-phone"></i>
+            <a href="tel: +549112223333"> 11.222.3333</a>
+            <i class="fa-brands fa-whatsapp"></i>
+            <a href="tel: +549112223344"> 11.222.3344</a>
+        </div>
+        </div>
     </footer>
 </body>
 
