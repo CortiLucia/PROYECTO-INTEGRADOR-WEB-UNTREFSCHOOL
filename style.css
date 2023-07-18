@@ -78,8 +78,8 @@ header div.container nav ul li {
     border: 3px solid var(--color-cuatro);
     border-radius: 0.2em;
     position: absolute;
-    right: 0.5em;
-    top: 0.5em;
+    right: 1em;
+    top: 1em;
     z-index: 9999;
 }
 
@@ -114,13 +114,16 @@ header .container nav {
 
 nav ul li a {
     text-decoration: none;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    ;
     color: var(--color-cuatro);
 }
 
 main .titulo {
     margin-top: 1rem;
     color: var(--color-cinco);
-    background-image: url(./imgs/escuela.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./imgs/escuela.jpg");
     background-size: cover;
     background-position: center;
     height: 200px;
@@ -201,7 +204,7 @@ ul li i:after {
     padding: 0 50px 0 15px;
     transition: .3s opacity, .6s max-height;
     hyphens: auto;
-    
+
 }
 
 #informacion ul {
@@ -212,7 +215,7 @@ ul li i:after {
 }
 
 #informacion ul li {
-    
+
     position: relative;
     overflow: hidden;
     padding: 0;
@@ -322,6 +325,32 @@ footer .redes {
     height: 100%;
     width: 100%;
     position: absolute;
+}
+
+.contacto .titulo {
+    justify-content: center;
+    color: var(--color-cinco);
+    grid-column: 1 / -1;
+}
+
+.contacto {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 5px;
+    padding: 1rem;
+    padding-top: 0;
+
+}
+
+.contacto i {
+    color: var(--color-cinco);
+    font-size: 1.2rem;
+
+}
+
+.contacto a {
+    color: var(--color-cinco);
+    font-size: 1rem;
 }
 
 
