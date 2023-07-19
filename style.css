@@ -4,121 +4,11 @@ html {
     --color-tres: #00425A;
     --color-cuatro: #181823;
     --color-cinco: #EFF5F5;
-}
-
-/* header h2 {
-    margin: 0;
-    font-size: 1.8rem;
-}
-
-header div.container {
-    display: flex;
-    place-content: space-between;
-}
-
-#menu-check:not(:checked)~nav {
-    display: none;
-}
-
-#menu-check:checked~nav {
-    display: block;
-}
-
-#menu:hover {
-    color: var(--color-tres);
-    background-color: transparent;
-}
-
-#menu-cerrar {
-    display: none;
-}
-
-#menu-check:checked~label #menu-abrir {
-    display: none;
-}
-
-#menu-check:checked~label #menu-cerrar {
-    display: block;
-}
-
-header div.container nav {
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 70%;
-    background-color: var(--color-tres);
-    padding-top: 0.8em;
-    padding-right: 1.8em;
-    opacity: 0.8;
-    color: var(--color-tres);
-    font-size: 1.4em;
-}
-
-header div.container nav ul a {
-    color: var(--color-cinco);
-    background-color: none;
-}
-
-header div.container nav ul,
-header div.container nav ul li {
-    display: block;
-    text-align: right;
-}
-
-#menu {
-    display: block;
-    color: var(--color-tres);
-    background-color: transparent;
-    font-size: 1.2em;
-    font-weight: bold;
-    border: 3px solid var(--color-cuatro);
-    border-radius: 0.2em;
-    position: absolute;
-    right: 1em;
-    top: 1em;
-    z-index: 9999;
-}
-
-header .container input label span {
-    padding: 1rem;
-}
-
-header h2 {
-    font-family: 'Poppins', sans-serif;
-    padding: 10px 0 0 10px;
-    color: var(--color-dos);
-}
-
-header h2 span {
-    font-family: 'Poppins', sans-serif;
-    color: var(--color-uno);
-}
-
-header .container {
-    place-content: flex-start;
-}
-
-header .container nav {
-    width: 70%;
-    display: flex;
-    place-content: space-between;
-    z-index: 1;
+    scroll-behavior: smooth;
 }
 
 
-#menu-check {
-    display: none;
-}
-
-nav ul li a {
-    text-decoration: none;
-    font-size: 1rem;
-    font-family: 'Poppins', sans-serif;
-    ;
-    color: var(--color-cuatro);
-} */
-
-.container {
+header {
     width: 100%;
 }
 
@@ -177,11 +67,11 @@ nav ul li a {
     font-size: 1.5rem;
   }
 
-.nav .nav-links {
+.nav nav {
     display: none;
 }
 
-#nav-check:checked~.nav-links {
+#nav-check:checked~nav {
     display: block;
     position: absolute;
     top: 50px;
@@ -191,7 +81,7 @@ nav ul li a {
     border-radius: 10px 10px 10px;
 }
 
-#nav-check:checked~.nav-links a {
+#nav-check:checked~nav a {
     display: block;
     color: var(--color-cinco);
     padding: 10px 20px;
@@ -204,8 +94,6 @@ nav ul li a {
 .nav #nav-check {
     display: none;
 }
-
-
 
 main .titulo {
     margin-top: 1rem;
@@ -301,7 +189,6 @@ section .opciones p {
 .flip-card-front {
     background-color: var(--color-cinco);
     overflow: hidden;
-
 }
 
 .flip-card-front img {
@@ -533,7 +420,7 @@ footer .redes {
         display: none;
     }
 
-    .nav .nav-links {
+    .nav nav {
         display: flex;
         column-gap: 1.5rem;
         font-size: 18px;
@@ -541,14 +428,14 @@ footer .redes {
         border-radius: 0 0 10px 10px;
     }
 
-    .nav .nav-links a {
+    .nav nav a {
         display: flex;
         font-family: 'Poppins', sans-serif;
         color: var(--color-cinco);
         text-decoration: none;
     }
 
-    .nav .nav-links a i {
+    .nav nav a i {
         margin-right: 5px;
         color: var(--color-cinco);
       }
@@ -556,25 +443,3 @@ footer .redes {
 
 }
 
-/* @media (min-width:768px) {
-    body {
-        background-color: var(--color-cinco);
-    }
-
-    footer .redes {
-        display: grid;
-        justify-content: space-evenly;
-    }
-
-    footer .ubicacion {
-        cursor: url(https://maps.gstatic.com/mapfiles/openhand_8_8.cur), default;
-    }
-
-    footer .ubicacion iframe {
-        position: absolute;
-        height: 50%;
-        width: 50%;
-        padding: 0px;
-    }
-
-}
