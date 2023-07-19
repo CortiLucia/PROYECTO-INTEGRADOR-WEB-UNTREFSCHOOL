@@ -11,12 +11,27 @@ body {
 }
 
 header h2 {
-    padding: 10px 0 0 10px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
     color: var(--color-dos);
+    text-align: center;
 }
 
 header h2 span {
+    font-family: 'Poppins', sans-serif;
     color: var(--color-uno);
+}
+
+.titulo {
+    
+    color: var(--color-cinco);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../imgs/escuela.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    width: 100%;
+    display: grid;
+    place-content: center;
 }
 
 .formulario {
@@ -27,6 +42,8 @@ header h2 span {
 
 .formulario label {
     margin-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
+    color: var(--color-cuatro);
 }
 form {
     display: flex;
@@ -39,18 +56,33 @@ form {
     margin-bottom: 15px;
     border-radius: 10px;
     font-size: 1.2rem;
+    background-color: rgba(31, 138, 112, 0.1);
 }
 
-.formulario textarea {
-    resize: vertical;
+.boton {
+    display: flex;
+    justify-content: center;
 }
 
 .enviar {
     background-color: var(--color-dos);
-    width: 6rem;
-    height: 40px;
+    width: 10rem;
+    height: 30px;
     font-size: 1rem;
-    border-radius: 15px;
+    border-radius: 8px;
     border: none;
     color: var(--color-cinco);
+}
+
+a {
+    display: flex;
+    margin: 1rem;
+    text-decoration: none;
+    color: var(--color-cuatro);
+    font-size: 1rem;
+}
+
+i {
+    color: var(--color-cuatro);
+    font-size: 1rem;
 }
