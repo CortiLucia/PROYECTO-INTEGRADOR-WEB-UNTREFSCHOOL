@@ -1,17 +1,14 @@
 html {
-    --color-uno: #FC7300;
+    --color-uno: #fa7000;
     --color-dos: #1F8A70;
     --color-tres: #00425A;
     --color-cuatro: #181823;
     --color-cinco: #EFF5F5;
 }
 
-body {
-    font-family: 'Poppins', sans-serif;
-}
-
-header h2 {
+/* header h2 {
     margin: 0;
+    font-size: 1.8rem;
 }
 
 header div.container {
@@ -48,7 +45,7 @@ header div.container nav {
     position: absolute;
     top: 0;
     right: 0;
-    height: 50%;
+    height: 70%;
     background-color: var(--color-tres);
     padding-top: 0.8em;
     padding-right: 1.8em;
@@ -87,11 +84,13 @@ header .container input label span {
 }
 
 header h2 {
+    font-family: 'Poppins', sans-serif;
     padding: 10px 0 0 10px;
     color: var(--color-dos);
 }
 
 header h2 span {
+    font-family: 'Poppins', sans-serif;
     color: var(--color-uno);
 }
 
@@ -106,7 +105,7 @@ header .container nav {
     z-index: 1;
 }
 
-/* #menu, */
+
 #menu-check {
     display: none;
 }
@@ -117,7 +116,96 @@ nav ul li a {
     font-family: 'Poppins', sans-serif;
     ;
     color: var(--color-cuatro);
+} */
+
+.container {
+    width: 100%;
 }
+
+.nav {
+    height: 50px;
+    width: 100%;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--color-tres);
+    position: relative;
+    border: none;
+    border-radius: 10px 10px 0 0;
+}
+
+.nav .nav-header {
+    width: 100%;
+    display: inline;
+    text-align: center;
+}
+
+.nav .nav-header .nav-title {
+    font-size: 2rem;
+    font-family: 'Poppins', sans-serif;
+    color: var(--color-dos);
+    padding: 10px;
+}
+
+.nav .nav-header .nav-title span {
+    font-family: 'Poppins', sans-serif;
+    color: var(--color-uno);
+}
+
+.nav .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+
+.nav .nav-btn label {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    width: 50px;
+    height: 50px;
+    padding: 15px;
+    border: none;
+    border-top-right-radius: 10px;
+    cursor: pointer;
+}
+
+.nav .nav-btn label i {
+    color: var(--color-cinco);
+    font-size: 1.5rem;
+  }
+
+.nav .nav-links {
+    display: none;
+}
+
+#nav-check:checked~.nav-links {
+    display: block;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    background-color: var(--color-tres);
+    border-radius: 10px 10px 10px;
+}
+
+#nav-check:checked~.nav-links a {
+    display: block;
+    color: var(--color-cinco);
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.nav #nav-check {
+    display: none;
+}
+
+
 
 main .titulo {
     margin-top: 1rem;
@@ -132,160 +220,195 @@ main .titulo {
 }
 
 main .titulo h1 {
+    font-family: 'Poppins', sans-serif;
     font-size: 2rem;
     color: var(--color-dos);
     text-align: center;
 }
 
 main .titulo h1 span {
+    font-family: 'Poppins', sans-serif;
     color: var(--color-uno);
 }
 
-#informacion {
-    max-width: 700px;
-    margin: auto;
-    padding: 0 15px;
-    text-align: center;
 
-}
-
-section.informacion {
-    padding-top: 2em;
-    padding-bottom: 3em;
-}
-
-#informacion ul {
-    text-align: left;
-}
-
-.transition,
-p,
-ul li i:before,
-ul li i:after {
-    transition: all 0.3s;
-}
-
-#informacion .no-select,
-#informacion h2 {
-    -webkit-tap-highlight-color: transparent;
-    -webkit-touch-callout: none;
-    user-select: none;
-}
-
-#informacion h2 {
+section h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.3rem;
     color: var(--color-dos);
+    padding: 0.3rem;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    width: 100%;
+}
+
+section .opciones span img {
+    place-content: center;
+    size: cover;
+    position: center;
+    width: 100%;
+    height: 200%;
+    border-radius: 10px;
+    margin: 0.5rem;
+}
+
+section .opciones p {
     font-family: 'Poppins', sans-serif;
-    font-size: 20px;
-    line-height: 34px;
-    text-align: left;
-    padding: 15px 15px 0;
-    text-transform: none;
-    font-weight: 300;
-    letter-spacing: 1px;
+    line-height: 1.6rem;
+    font-size: 1rem;
+    padding: 0.2rem 0.9rem;
     display: block;
-    margin: 0;
-    cursor: pointer;
-    transition: .2s;
+
 }
 
-#informacion p {
-    color: var(--color-cuatro);
-    text-align: left;
-    font-family: 'Poppins', sans-serif;
-    font-size: 14px;
-    line-height: 1.45;
+.propuestas {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+.flip-card {
+    width: 300px;
+    height: 350px;
+    perspective: 1000px;
+    padding: 0.8rem 0.5rem;
+}
+
+.flip-card-inner {
     position: relative;
-    overflow: hidden;
-    display: inline-block;
-    transform: translate(0, 0);
-    margin-top: 5px;
-    margin-bottom: 15px;
-    padding: 0 50px 0 15px;
-    transition: .3s opacity, .6s max-height;
-    hyphens: auto;
-
-}
-
-#informacion ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    position: relative;
-}
-
-#informacion ul li {
-
-    position: relative;
-    overflow: hidden;
-    padding: 0;
-    margin: 0;
-    /*padding-bottom: 4px;*/
-    /*padding-top: 18px;*/
-    background: #fff;
-    box-shadow: 0 3px 10px -2px rgba(0, 0, 0, 0.1);
-    -webkit-tap-highlight-color: transparent;
-}
-
-#informacion ul li+li {
-    margin-top: 15px;
-}
-
-#informacion ul li:last-of-type {
-    padding-bottom: 0;
-}
-
-#informacion ul li i {
-    position: absolute;
-    transform: translate(-6px, 0);
-    margin-top: 28px;
-    right: 15px;
-}
-
-#informacion ul li i:before,
-ul li i:after {
-    content: "";
-    position: absolute;
-    background-color: var(--color-dos);
-    width: 3px;
-    height: 9px;
-}
-
-#informacion ul li i:before {
-    transform: translate(-2px, 0) rotate(45deg);
-}
-
-#informacion ul li i:after {
-    transform: translate(2px, 0) rotate(-45deg);
-}
-
-#informacion ul li input[type=checkbox] {
-    position: absolute;
-    cursor: pointer;
     width: 100%;
     height: 100%;
-    opacity: 0;
-    touch-action: manipulation;
+    border: none;
+    border-radius: 10px;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
 }
 
-#informacion ul li input[type=checkbox]:checked~h2 {
-    color: #000;
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
 }
 
-#informacion ul li input[type=checkbox]:checked~p {
-    /*margin-top: 0;*/
-    max-height: 0;
-    transition: .3s;
-    opacity: 0;
-    /*transform: translate(0, 50%);*/
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
 }
 
-#informacion ul li input[type=checkbox]:checked~i:before {
-    transform: translate(2px, 0) rotate(45deg);
+.flip-card-front {
+    background-color: var(--color-cinco);
+    overflow: hidden;
+
 }
 
-#informacion ul li input[type=checkbox]:checked~i:after {
-    transform: translate(-2px, 0) rotate(-45deg);
+.flip-card-front img {
+    max-height: 100%;
 }
+
+.flip-card-back {
+    background-color: var(--color-uno);
+    color: var(--color-cinco);
+    transform: rotateY(180deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.card-content {
+    padding: 20px;
+    text-align: center;
+}
+
+.card-content h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.card-content p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    padding: 0.5rem;
+    line-height: 1.2rem;
+}
+
+
+.container-noticias {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.noticias {
+    background-color: var(--color-dos);
+    width: 300px;
+    height: 570px;
+    margin: 10px;
+    border-radius: 15px;
+}
+
+.noticia-imagen {
+    object-fit: cover;
+    height: 180px;
+    margin-bottom: 15px;
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+.container-noticias h3 {
+    font-family: 'Poppins', sans-serif;
+    display: block;
+    color: var(--color-cinco);
+    padding: 0.3rem 0.9rem;
+    margin-top: 0;
+}
+
+.container-noticias p {
+    display: block;
+    font-family: 'Poppins', sans-serif;
+    color: var(--color-cinco);
+    line-height: 1.2rem;
+    font-size: 1rem;
+    padding: 0.2rem 0.9rem;
+    margin-top: 0;
+}
+
+
+.noticia-1 {
+    background-image: url("./imgs/olimpiadas.jpg");
+}
+
+.noticia-2 {
+    background-image: url("./imgs/servicio.jpg");
+}
+
+.noticia-3 {
+    background-image: url("./imgs/eventociencia.jpg");
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .formulario {
     display: flex;
@@ -296,6 +419,7 @@ ul li i:after {
 .formulario label {
     margin-bottom: 10px;
 }
+
 form {
     display: flex;
     flex-direction: column;
@@ -340,7 +464,11 @@ footer .titulo {
 footer .redes i {
     font-size: 20px;
     color: var(--color-cinco);
+}
 
+footer .redes a {
+    text-decoration: none;
+    color: var(--color-cinco);
 }
 
 footer .redes {
@@ -349,18 +477,21 @@ footer .redes {
     gap: 15px;
     padding: 1rem;
     padding-top: 0;
+
 }
 
 .ubicacion {
     overflow: hidden;
     padding-bottom: 55%;
     position: relative;
+    cursor: url(https://maps.gstatic.com/mapfiles/openhand_8_8.cur), default;
 }
 
 .ubicacion iframe {
     height: 100%;
     width: 100%;
     position: absolute;
+
 }
 
 .contacto .titulo {
@@ -390,9 +521,60 @@ footer .redes {
 
 
 
-@media (min-width:768px) {
-    body {
-        background-color: #FC7300;
+
+@media (min-width: 769px) {
+    .nav .nav-header {
+        width: 50%;
+        text-align: center;
+        
     }
+
+    .nav .nav-btn {
+        display: none;
+    }
+
+    .nav .nav-links {
+        display: flex;
+        column-gap: 1.5rem;
+        font-size: 18px;
+        border: none;
+        border-radius: 0 0 10px 10px;
+    }
+
+    .nav .nav-links a {
+        display: flex;
+        font-family: 'Poppins', sans-serif;
+        color: var(--color-cinco);
+        text-decoration: none;
+    }
+
+    .nav .nav-links a i {
+        margin-right: 5px;
+        color: var(--color-cinco);
+      }
+
+
 }
- 
+
+/* @media (min-width:768px) {
+    body {
+        background-color: var(--color-cinco);
+    }
+
+    footer .redes {
+        display: grid;
+        justify-content: space-evenly;
+    }
+
+    footer .ubicacion {
+        cursor: url(https://maps.gstatic.com/mapfiles/openhand_8_8.cur), default;
+    }
+
+    footer .ubicacion iframe {
+        position: absolute;
+        height: 50%;
+        width: 50%;
+        padding: 0px;
+    }
+
+}

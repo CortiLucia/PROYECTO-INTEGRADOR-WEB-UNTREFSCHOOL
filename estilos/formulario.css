@@ -1,0 +1,56 @@
+html {
+    --color-uno: #FC7300;
+    --color-dos: #1F8A70;
+    --color-tres: #00425A;
+    --color-cuatro: #181823;
+    --color-cinco: #EFF5F5;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+header h2 {
+    padding: 10px 0 0 10px;
+    color: var(--color-dos);
+}
+
+header h2 span {
+    color: var(--color-uno);
+}
+
+.formulario {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.formulario label {
+    margin-bottom: 10px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.contacto-input {
+    margin-bottom: 15px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+}
+
+.formulario textarea {
+    resize: vertical;
+}
+
+.enviar {
+    background-color: var(--color-dos);
+    width: 6rem;
+    height: 40px;
+    font-size: 1rem;
+    border-radius: 15px;
+    border: none;
+    color: var(--color-cinco);
+}
