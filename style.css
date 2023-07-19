@@ -31,14 +31,14 @@ header {
     text-align: center;
 }
 
-.nav .nav-header .nav-title {
-    font-size: 2rem;
+.nav .nav-header .nav-title h2 {
+    font-size: 1.7rem;
     font-family: 'Poppins', sans-serif;
     color: var(--color-dos);
     padding: 10px;
 }
 
-.nav .nav-header .nav-title span {
+.nav .nav-header .nav-title h2 span {
     font-family: 'Poppins', sans-serif;
     color: var(--color-uno);
 }
@@ -65,7 +65,7 @@ header {
 .nav .nav-btn label i {
     color: var(--color-cinco);
     font-size: 1.5rem;
-  }
+}
 
 .nav nav {
     display: none;
@@ -119,7 +119,6 @@ main .titulo h1 span {
     color: var(--color-uno);
 }
 
-
 section h2 {
     font-family: 'Poppins', sans-serif;
     font-size: 1.3rem;
@@ -142,11 +141,11 @@ section .opciones span img {
 
 section .opciones p {
     font-family: 'Poppins', sans-serif;
+    color: var(--color-cuatro);
     line-height: 1.6rem;
     font-size: 1rem;
     padding: 0.2rem 0.9rem;
     display: block;
-
 }
 
 .propuestas {
@@ -154,7 +153,6 @@ section .opciones p {
     justify-content: center;
     flex-wrap: wrap;
 }
-
 
 .flip-card {
     width: 300px;
@@ -202,7 +200,6 @@ section .opciones p {
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .card-content {
@@ -222,7 +219,6 @@ section .opciones p {
     padding: 0.5rem;
     line-height: 1.2rem;
 }
-
 
 .container-noticias {
     display: flex;
@@ -248,10 +244,11 @@ section .opciones p {
 
 .container-noticias h3 {
     font-family: 'Poppins', sans-serif;
-    display: block;
     color: var(--color-cinco);
-    padding: 0.3rem 0.9rem;
-    margin-top: 0;
+    justify-content: center;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .container-noticias p {
@@ -263,7 +260,6 @@ section .opciones p {
     padding: 0.2rem 0.9rem;
     margin-top: 0;
 }
-
 
 .noticia-1 {
     background-image: url("./imgs/olimpiadas.jpg");
@@ -277,94 +273,50 @@ section .opciones p {
     background-image: url("./imgs/eventociencia.jpg");
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.formulario {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.formulario label {
-    margin-bottom: 10px;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-top: 15px;
-}
-
-.contacto-input {
-    margin-bottom: 15px;
-    border-radius: 10px;
-    font-size: 1.2rem;
-}
-
-.formulario textarea {
-    resize: vertical;
-}
-
-.enviar {
-    background-color: var(--color-dos);
-    width: 6rem;
-    height: 40px;
-    font-size: 1rem;
-    border-radius: 15px;
-    border: none;
-    color: var(--color-cinco);
-}
-
-
 footer {
     background-color: var(--color-tres);
+    padding-top: 0.5rem;
+}
+
+footer h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem;
+    color: var(--color-dos);
+    text-align: center;
+    padding: 0;
+    margin: 0.5rem;
+}
+
+footer h2 span {
+    color: var(--color-uno);
 }
 
 footer .titulo {
     font-family: 'Poppins', sans-serif;
-    font-size: 25px;
-    color: var(--color-cinco);
-    display: flex;
-    justify-content: center;
-    padding-top: 0.5rem;
-}
-
-footer .redes i {
-    font-size: 20px;
-    color: var(--color-cinco);
-}
-
-footer .redes a {
-    text-decoration: none;
-    color: var(--color-cinco);
+    font-size: 30px;
+    color: var(--color-dos);
+    text-align: center;
+    padding: 0.5rem;
+    margin: 0.5rem;
 }
 
 footer .redes {
     display: flex;
     justify-content: center;
-    gap: 15px;
+    gap: 10px;
     padding: 1rem;
     padding-top: 0;
+}
 
+footer .redes i {
+    font-size: 28px;
+    color: var(--color-cinco);
+}
+
+footer .redes a {
+    text-decoration: none;
+    color: transparent;
+    font-size: 1px;
 }
 
 .ubicacion {
@@ -376,16 +328,17 @@ footer .redes {
 
 .ubicacion iframe {
     height: 100%;
-    width: 100%;
+    width: 90%;
     position: absolute;
-
+    margin-left: 15px;
+    border-radius: 15px;
 }
 
 .contacto .titulo {
     justify-content: center;
-    color: var(--color-cinco);
+    color: var(--color-uno);
     grid-column: 1 / -1;
-    margin: 0;
+    margin: 0.5rem;
 }
 
 .contacto {
@@ -402,18 +355,30 @@ footer .redes {
 }
 
 .contacto a {
+    font-family: 'Poppins', sans-serif;
     color: var(--color-cinco);
-    font-size: 1rem;
+    font-size: 1.2rem;
+    text-decoration: none;
 }
 
+.button-container {
+    text-align: center;
+}
 
-
+button {
+    background-color: var(--color-tres);
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    color: var(--color-cinco);
+    padding: 0.2rem 3rem;
+    border-radius: 15px;
+    margin-bottom: 0.5rem;
+}
 
 @media (min-width: 769px) {
     .nav .nav-header {
         width: 50%;
         text-align: center;
-        
     }
 
     .nav .nav-btn {
@@ -438,8 +403,7 @@ footer .redes {
     .nav nav a i {
         margin-right: 5px;
         color: var(--color-cinco);
-      }
+    }
 
 
 }
-
