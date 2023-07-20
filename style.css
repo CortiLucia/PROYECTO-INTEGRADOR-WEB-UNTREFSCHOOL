@@ -156,6 +156,7 @@ section h2 {
     flex-wrap: wrap;
 }
 
+
 .flip-card {
     width: 300px;
     height: 350px;
@@ -435,10 +436,12 @@ button {
             "dos   img";
         align-items: center;
         padding: 1rem;
+        background-color: rgba(31, 138, 112, 0.1);
     }
 
     .quienes-somos>.texto-uno {
         grid-area: uno;
+        margin-top: 2rem;
     }
 
     .quienes-somos>img {
@@ -447,20 +450,23 @@ button {
 
     .quienes-somos>.texto-dos {
         grid-area: dos;
+        margin-bottom: 2rem;
 
     }
 
    .opciones .elegirnos {
         display: grid;
         grid-template-areas:
-            "uno   img"
-            "dos   img";
+            "img   uno"
+            "img   dos";
         align-items: center;
         padding: 1rem;
+        background-color: rgba(250, 112, 0, 0.1);
     }
 
     .elegirnos>.texto-uno {
         grid-area: uno;
+        margin-top: 2rem;
     }
 
     .elegirnos>img {
@@ -469,6 +475,7 @@ button {
 
     .elegirnos>.texto-dos {
         grid-area: dos;
+        margin-bottom: 2rem;
 
     }
 
