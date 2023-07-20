@@ -437,7 +437,7 @@ button {
         padding: 1rem;
     }
 
-    .quienes-somos>.uno {
+    .quienes-somos>.texto-uno {
         grid-area: uno;
     }
 
@@ -445,7 +445,7 @@ button {
         grid-area: img;
     }
 
-    .quienes-somos>.dos {
+    .quienes-somos>.texto-dos {
         grid-area: dos;
 
     }
@@ -459,7 +459,7 @@ button {
         padding: 1rem;
     }
 
-    .elegirnos>.uno {
+    .elegirnos>.texto-uno {
         grid-area: uno;
     }
 
@@ -467,7 +467,7 @@ button {
         grid-area: img;
     }
 
-    .elegirnos>.dos {
+    .elegirnos>.texto-dos {
         grid-area: dos;
 
     }
