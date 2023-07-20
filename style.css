@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 html {
     --color-uno: #fa7000;
     --color-dos: #1F8A70;
@@ -6,7 +10,6 @@ html {
     --color-cinco: #EFF5F5;
     scroll-behavior: smooth;
 }
-
 
 header {
     width: 100%;
@@ -17,11 +20,8 @@ header {
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
     background-color: var(--color-tres);
     position: relative;
-    border: none;
-    border-radius: 10px 10px 0 0;
 }
 
 .nav .nav-header {
@@ -107,7 +107,7 @@ main .titulo {
 
 main .titulo h1 {
     font-family: 'Poppins', sans-serif;
-    font-size: 2rem;
+    font-size: 2.5rem;
     color: var(--color-dos);
     text-align: center;
 }
@@ -127,19 +127,27 @@ section h2 {
     width: 100%;
 }
 
-section .opciones span img {
-    width: 100%;
-    height: 200%;
+.opciones img {
+    width: 300px;
     border-radius: 10px;
+    margin: 16px;
 }
 
-section .opciones p {
+.opciones .quienes-somos, 
+.opciones .elegirnos  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.opciones p {
     font-family: 'Poppins', sans-serif;
     color: var(--color-cuatro);
     line-height: 1.6rem;
     font-size: 1rem;
     padding: 0.2rem 0.9rem;
-    display: block;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .propuestas {
@@ -273,6 +281,7 @@ footer {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    padding-bottom: 0.5rem;
 }
 
 footer h2 {
@@ -308,6 +317,8 @@ footer h2 span {
 .redes i {
     color: var(--color-cinco);
     font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    padding-left: 1rem;
     margin-right: 0.5rem;
 }
 
@@ -365,6 +376,7 @@ footer h2 span {
 
 .button-container {
     text-align: center;
+
 }
 
 button {
@@ -374,13 +386,12 @@ button {
     color: var(--color-cinco);
     padding: 0.2rem 3rem;
     border-radius: 15px;
-    margin-bottom: 0.5rem;
     border: 1px solid var(--color-cinco);
 }
 
 @media (min-width: 768px) {
     .nav .nav-header {
-        width: 50%;
+        width: fit-content;
         text-align: center;
     }
 
@@ -395,8 +406,9 @@ button {
         text-align: center;
         border: none;
         border-radius: 0 0 10px 10px;
-        margin-right: 3rem;
+        margin-right: 1rem;
         align-items: center;
+        margin-left: auto;
     }
 
     .nav nav a {
@@ -404,12 +416,64 @@ button {
         font-family: 'Poppins', sans-serif;
         color: var(--color-cinco);
         text-decoration: none;
-
     }
 
     .nav nav a i {
         margin-right: 5px;
         color: var(--color-cinco);
+    }
+
+    section h2 {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .opciones .quienes-somos {
+        display: grid;
+        grid-template-areas:
+            "uno   img"
+            "dos   img";
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .quienes-somos>.uno {
+        grid-area: uno;
+    }
+
+    .quienes-somos>img {
+        grid-area: img;
+    }
+
+    .quienes-somos>.dos {
+        grid-area: dos;
+
+    }
+
+   .opciones .elegirnos {
+        display: grid;
+        grid-template-areas:
+            "uno   img"
+            "dos   img";
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .elegirnos>.uno {
+        grid-area: uno;
+    }
+
+    .elegirnos>img {
+        grid-area: img;
+    }
+
+    .elegirnos>.dos {
+        grid-area: dos;
+
+    }
+
+    .opciones img {
+        width: 95%;
     }
 
     .container-noticias {
@@ -421,7 +485,7 @@ button {
         width: 100%;
         height: 250px;
         justify-content: space-evenly;
-        padding-bottom: 1rem;
+        padding: 1rem;
         grid-template-areas:
             "redes      h2    contacto"
             "redes  ubicacion contacto "
