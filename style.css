@@ -15,7 +15,6 @@ header {
 .nav {
     height: 50px;
     width: 100%;
-    padding: 0 10px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -32,6 +31,7 @@ header {
 }
 
 .nav .nav-header .nav-title h2 {
+    display: flex;
     font-size: 1.7rem;
     font-family: 'Poppins', sans-serif;
     color: var(--color-dos);
@@ -78,7 +78,6 @@ header {
     left: 0;
     width: 100%;
     background-color: var(--color-tres);
-    border-radius: 10px 10px 10px;
 }
 
 #nav-check:checked~nav a {
@@ -96,7 +95,6 @@ header {
 }
 
 main .titulo {
-    margin-top: 1rem;
     color: var(--color-cinco);
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./imgs/escuela.jpg");
     background-size: cover;
@@ -130,13 +128,9 @@ section h2 {
 }
 
 section .opciones span img {
-    place-content: center;
-    size: cover;
-    position: center;
     width: 100%;
     height: 200%;
     border-radius: 10px;
-    margin: 0.5rem;
 }
 
 section .opciones p {
@@ -270,12 +264,15 @@ section .opciones p {
 }
 
 .noticia-3 {
-    background-image: url("./imgs/eventociencia.jpg");
+    background-image: url("./imgs/evento_ciencia.jpg");
 }
 
 footer {
     background-color: var(--color-tres);
     padding-top: 0.5rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 footer h2 {
@@ -291,52 +288,56 @@ footer h2 span {
     color: var(--color-uno);
 }
 
-footer .titulo {
+
+.redes .titulo {
     font-family: 'Poppins', sans-serif;
     font-size: 30px;
-    color: var(--color-dos);
-    text-align: center;
-    padding: 0.5rem;
-    margin: 0.5rem;
-}
-
-footer .redes {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    padding: 1rem;
-    padding-top: 0;
-}
-
-footer .redes i {
-    font-size: 28px;
     color: var(--color-cinco);
+    grid-column: 1 / -1;
+    margin: 0.5rem;
+
 }
 
-footer .redes a {
+.redes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+    padding: 1rem 0 1rem 2rem;
+}
+
+.redes i {
+    color: var(--color-cinco);
+    font-size: 1.2rem;
+    margin-right: 0.5rem;
+}
+
+.redes a {
+    font-family: 'Poppins', sans-serif;
+    color: var(--color-cinco);
+    font-size: 1.2rem;
     text-decoration: none;
-    color: transparent;
-    font-size: 1px;
 }
 
 .ubicacion {
+    display: flex;
     overflow: hidden;
     padding-bottom: 55%;
     position: relative;
     cursor: url(https://maps.gstatic.com/mapfiles/openhand_8_8.cur), default;
+    justify-content: center;
 }
 
 .ubicacion iframe {
     height: 100%;
     width: 90%;
     position: absolute;
-    margin-left: 15px;
     border-radius: 15px;
 }
 
 .contacto .titulo {
-    justify-content: center;
-    color: var(--color-uno);
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    color: var(--color-cinco);
     grid-column: 1 / -1;
     margin: 0.5rem;
 }
@@ -345,13 +346,13 @@ footer .redes a {
     display: grid;
     grid-template-columns: auto 1fr;
     gap: 5px;
-    padding: 1rem;
-    padding-top: 0;
+    padding: 1rem 0 1rem 2rem;
 }
 
 .contacto i {
     color: var(--color-cinco);
     font-size: 1.2rem;
+    padding-left: 1rem;
 }
 
 .contacto a {
@@ -359,6 +360,7 @@ footer .redes a {
     color: var(--color-cinco);
     font-size: 1.2rem;
     text-decoration: none;
+
 }
 
 .button-container {
@@ -373,9 +375,10 @@ button {
     padding: 0.2rem 3rem;
     border-radius: 15px;
     margin-bottom: 0.5rem;
+    border: 1px solid var(--color-cinco);
 }
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
     .nav .nav-header {
         width: 50%;
         text-align: center;
@@ -388,9 +391,12 @@ button {
     .nav nav {
         display: flex;
         column-gap: 1.5rem;
-        font-size: 18px;
+        font-size: 16px;
+        text-align: center;
         border: none;
         border-radius: 0 0 10px 10px;
+        margin-right: 3rem;
+        align-items: center;
     }
 
     .nav nav a {
@@ -398,6 +404,7 @@ button {
         font-family: 'Poppins', sans-serif;
         color: var(--color-cinco);
         text-decoration: none;
+
     }
 
     .nav nav a i {
@@ -405,5 +412,48 @@ button {
         color: var(--color-cinco);
     }
 
+    .container-noticias {
+        justify-content: space-evenly;
+    }
+
+    footer {
+        display: grid;
+        width: 100%;
+        height: 250px;
+        justify-content: space-evenly;
+        padding-bottom: 1rem;
+        grid-template-areas:
+            "redes      h2    contacto"
+            "redes  ubicacion contacto "
+            "redes  ubicacion button-container";
+    }
+
+    .redes {
+        grid-template-columns: auto;
+    }
+
+    footer>h2 {
+        grid-area: h2;
+    }
+
+
+    footer>.redes {
+        grid-area: redes;
+    }
+
+    footer>.ubicacion {
+        grid-area: ubicacion;
+
+    }
+
+    footer>.contacto {
+        grid-area: contacto;
+
+    }
+
+    footer>.button-container {
+        grid-area: button-container;
+
+    }
 
 }

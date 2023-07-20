@@ -32,8 +32,8 @@
                 <a href="#elegirnos">Por qué elegirnos</a>
                 <a href="#propuestas">Propuesta educativa</a>
                 <a href="#noticias">Ultimas noticias</a>
-                <a href="#instituto">Instituto</a>
-                <a href="#contacto">Contacto</a>
+                <a href="#informacion">Información</a>
+                <a href="./html/formulario.html">Contactanos</a>
             </nav>
         </div>
     </header>
@@ -52,7 +52,7 @@
                         misión
                         es brindar un entorno seguro y acogedor donde los alumnos puedan desarrollar sus habilidades y
                         alcanzar su máximo potencial.
-                        <span><img src="imgs/quienessomos.jpg" alt="Quienes Somos" /></span>
+                        <span><img src="imgs/quienes_somos.jpg" alt="Quienes Somos" /></span>
                         Fomentamos la creatividad, la curiosidad y el pensamiento crítico. Valoramos la diversidad y
                         promovemos la inclusión, reconociendo que cada estudiante es único y posee talentos
                         individuales.
@@ -84,11 +84,11 @@
 
 
         <section class="propuestas">
-            <h2>Propuesta educativa</h2>
+            <h2 id="propuestas" >Propuesta educativa</h2>
             <div class="flip-card">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
-                        <img src="./imgs/propuestaciencia.jpg" alt="Propuesta Ciencia">
+                        <img src="./imgs/propuesta_ciencia.jpg" alt="Propuesta Ciencia">
                     </div>
                     <div class="flip-card-back">
                         <div class="card-content">
@@ -105,7 +105,7 @@
             <div class="flip-card">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
-                        <img src="./imgs/propuestaenseñanza.jpg" alt="Propuesta Ciencia">
+                        <img src="./imgs/propuesta_enseñanza.jpg" alt="Propuesta Ciencia">
                     </div>
                     <div class="flip-card-back">
                         <div class="card-content">
@@ -121,7 +121,7 @@
             <div class="flip-card">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
-                        <img src="./imgs/propuestaexcursion.jpg" alt="Propuesta Ciencia">
+                        <img src="./imgs/propuesta_excursion.jpg" alt="Propuesta Ciencia">
                     </div>
                     <div class="flip-card-back">
                         <div class="card-content">
@@ -137,7 +137,7 @@
             <div class="flip-card">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
-                        <img src="./imgs/propuestaarte.jpg" alt="Propuesta Ciencia">
+                        <img src="./imgs/propuesta_arte.jpg" alt="Propuesta Ciencia">
                     </div>
                     <div class="flip-card-back">
                         <div class="card-content">
@@ -197,22 +197,24 @@
 
     </main>
     <footer>
-        <h2>Untref<span>School</span></h2>
-        <h3 class="titulo">Redes Sociales</h3>
+        <h2 id="informacion">Untref<span>School</span></h2>
+
         <div class="redes">
-            <a href="https://www.facebook.com" id="facebook-link"><i class="fab fa-facebook"></i>Facebook</a>
+            <h3 class="titulo">Redes Sociales</h3>
+            <a href="https://www.facebook.com"><i class="fab fa-facebook"></i>Facebook</a>
             <a href="https://www.Instagram.com"><i class="fab fa-instagram"></i>Instagram</a>
             <a href="https://www.twitter.com"><i class="fab fa-twitter"></i>Twitter</a>
             <a href="https://www.youtube.com"><i class="fa-brands fa-youtube"></i>Youtube</a>
         </div>
         <div class="ubicacion">
-            <iframe id="instituto"
+            <iframe 
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.31403873594!2d-58.43283588880251!3d-34.5962196569892!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca7735e65453%3A0x4af86139896ec3f!2sInstituto%20Griego%20Atenagoras!5e0!3m2!1ses!2sar!4v1689559381570!5m2!1ses!2sar"
                 width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
+
         <div class="contacto">
-            <h3 class="titulo" id="contacto">Contacto</h3>
+            <h3 class="titulo">Contacto</h3>
             <i class="fa-regular fa-envelope"></i>
             <a href="mailto:untref@instituto.com.ar"> untref@instituto.com.ar</a>
             <i class="fa-solid fa-phone"></i>
@@ -222,7 +224,7 @@
         </div>
         <div class="button-container">
             
-            <button type="button" onclick="location.href= '../html/formulario.html' ">Consultas</button>
+            <button id="informacion" type="button" onclick="location.href= '../html/formulario.html' ">Contactanos</button>
         </div>
     </footer>
 </body>
