@@ -377,7 +377,6 @@ footer h2 span {
 
 .button-container {
     text-align: center;
-
 }
 
 button {
@@ -388,6 +387,7 @@ button {
     padding: 0.2rem 3rem;
     border-radius: 15px;
     border: 1px solid var(--color-cinco);
+    cursor: pointer;
 }
 
 @media (min-width: 768px) {
