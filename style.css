@@ -174,6 +174,21 @@ section h2 {
     transform-style: preserve-3d;
 }
 
+.flip-card-inner::after{
+    content: "Ver mas info";
+    color: var(--color-cinco);
+    font-family: 'Poppins', sans-serif;
+    background-color:var(--color-uno) ;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius:10px ;
+    padding: 5px 0;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    backface-visibility: hidden;
+}
+
 .flip-card:hover .flip-card-inner {
     transform: rotateY(180deg);
 }
@@ -372,15 +387,13 @@ footer h2 span {
     color: var(--color-cinco);
     font-size: 1.2rem;
     text-decoration: none;
-
 }
 
-.button-container {
+.contacto-container {
     text-align: center;
 }
 
-button {
-    background-color: var(--color-tres);
+.contacto-container  a {
     font-family: 'Poppins', sans-serif;
     font-size: 1.2rem;
     color: var(--color-cinco);
@@ -388,6 +401,7 @@ button {
     border-radius: 15px;
     border: 1px solid var(--color-cinco);
     cursor: pointer;
+    text-decoration: none;
 }
 
 @media (min-width: 768px) {
