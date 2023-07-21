@@ -33,13 +33,14 @@ header {
 .nav .nav-header .nav-title h2 {
     display: flex;
     font-size: 1.7rem;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Belanosima', sans-serif;
+    font-weight: 100;
     color: var(--color-dos);
     padding: 10px;
 }
 
 .nav .nav-header .nav-title h2 span {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Belanosima', sans-serif;
     color: var(--color-uno);
 }
 
@@ -106,14 +107,15 @@ main .titulo {
 }
 
 main .titulo h1 {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Belanosima', sans-serif;
     font-size: 2.5rem;
+    font-weight: 100;
     color: var(--color-dos);
     text-align: center;
 }
 
 main .titulo h1 span {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Belanosima', sans-serif;
     color: var(--color-uno);
 }
 
@@ -221,18 +223,20 @@ section h2 {
 }
 
 .card-content {
-    padding: 20px;
+    padding: 18px;
     text-align: center;
 }
 
 .card-content h3 {
     font-family: 'Poppins', sans-serif;
-    font-size: 24px;
+    text-decoration: underline;
+    font-size: 20px;
     margin-bottom: 5px;
 }
 
 .card-content p {
     font-family: 'Poppins', sans-serif;
+    color: var(--color-cinco);
     font-size: 16px;
     padding: 0.5rem;
     line-height: 1.2rem;

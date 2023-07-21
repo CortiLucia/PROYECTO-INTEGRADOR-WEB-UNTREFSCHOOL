@@ -18,14 +18,15 @@ body {
 }
 
 header h2 {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Belanosima', sans-serif;
+    font-weight: 100;
     font-size: 2rem;
     color: var(--color-dos);
     text-align: center;
 }
 
 header h2 span {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Belanosima', sans-serif;
     color: var(--color-uno);
 }
 
