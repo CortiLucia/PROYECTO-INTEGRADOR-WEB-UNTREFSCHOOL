@@ -320,7 +320,7 @@ footer h2 span {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 5px;
-    padding: 1rem 0 1rem 2rem;
+    padding: 1rem 1rem 2rem;
 }
 
 .redes i {
@@ -366,7 +366,7 @@ footer h2 span {
     display: grid;
     grid-template-columns: auto 1fr;
     gap: 5px;
-    padding: 1rem 0 1rem 2rem;
+    padding: 1rem 2rem;
 }
 
 .contacto i {
@@ -497,7 +497,6 @@ footer h2 span {
     footer {
         display: grid;
         width: 100%;
-        height: 250px;
         justify-content: space-evenly;
         padding: 1rem;
         grid-template-areas:
@@ -517,6 +516,7 @@ footer h2 span {
 
     footer>.redes {
         grid-area: redes;
+        padding-right: 1rem;
     }
 
     footer>.ubicacion {
